@@ -1,0 +1,150 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style du corps de la page */
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Utilisation de flex-direction column pour empiler le formulaire et les résultats */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style du formulaire */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre du formulaire */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label du champ de recherche */
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Champ de texte */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet au focus sur le champ de recherche */
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Style du bouton de recherche */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style de la section des résultats */
+.resultat {
+    margin-top: 30px; /* Espacement entre le formulaire et la section des résultats */
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour un conteneur des résultats météo */
+.resultat .meteo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Affichage du nom de la ville */
+.resultat .meteo-container .ville {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Affichage de la température */
+.resultat .meteo-container .temperature {
+    font-size: 36px;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Affichage des conditions climatiques */
+.resultat .meteo-container .condition {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Style de l'icône météo */
+.resultat .meteo-container .icone {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* Affichage des autres informations comme l'humidité, le vent */
+.resultat .meteo-container .infos {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Style pour l'élément de temps */
+.resultat .meteo-container .temps {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Ajouter un petit effet au survol des résultats */
+.resultat .meteo-container:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
